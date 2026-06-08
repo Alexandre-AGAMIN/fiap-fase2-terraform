@@ -1,30 +1,30 @@
 variable "bucket_name" {
-    default = "fiap-aula"
+  default = "fiap-aula"
 }
 
 variable "tags_dev" {
-    default = {
+  default = {
     Name        = "aula2"
     Environment = "Production"
   }
 }
 
 variable "tags_prod" {
-    default = {
+  default = {
     Name        = "aula3"
     Environment = "Production"
   }
 }
 
 variable "region_default" {
-    default = "us-east-1"
+  default = "us-east-1"
 }
 
 variable "region_oregon" {
-    default = "us-west-2"
+  default = "us-west-2"
 }
 
 variable "instance-type" {
-    default = "t2.micro"
+  default = "t2.micro"
 }
 
