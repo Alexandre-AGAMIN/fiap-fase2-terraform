@@ -15,3 +15,11 @@ variable "tags" {
     Name = "fiap-agamin-terraform-aula-8"
   }
 }
+
+variable "instance_type" {
+  default = "t3.nano"
+}
+
+variable "roleArn" {
+  default = "arn:aws:iam::154448561009:role/LabRole"
+}
