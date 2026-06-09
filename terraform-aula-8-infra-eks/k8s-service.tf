@@ -11,7 +11,7 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      name: HTTP
+      name: http
       port: 80
       targetPort: 80
   type: LoadBalancer

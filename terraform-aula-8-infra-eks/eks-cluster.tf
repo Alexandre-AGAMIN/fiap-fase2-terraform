@@ -2,7 +2,8 @@ resource "aws_eks_cluster" "cluster" {
   name = "eks-${var.projectName}"
 
   access_config {
-    authentication_mode = "API"
+    authentication_mode                         = "API"
+    bootstrap_cluster_creator_admin_permissions = true
   }
 
   role_arn = var.roleArn
@@ -16,10 +17,6 @@ resource "aws_eks_cluster" "cluster" {
     ]
     security_group_ids = [aws_security_group.sg.id]
   }
-
-  # Ensure that IAM Role permissions are created before and deleted
-  # after EKS Cluster handling. Otherwise, EKS will not be able to
-  # properly delete EKS managed EC2 infrastructure such as Security Groups.
-
+  
 }
 
