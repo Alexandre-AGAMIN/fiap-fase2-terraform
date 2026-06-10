@@ -13,6 +13,9 @@ variable "cidr_vpc" {
 variable "tags" {
   default = {
     Name = "fiap-agamin-terraform-aula-8"
+    School = "FIAP"
+    Environment = "dev",
+    Year = "2026"
   }
 }
 
