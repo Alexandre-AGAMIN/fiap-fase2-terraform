@@ -14,7 +14,8 @@ variable "tags" {
   default = {
     Name = "fiap-agamin-terraform-aula-8"
     School = "FIAP"
-    Environment = "dev"
+    Environment = "dev",
+    Year = "2026"
   }
 }
 
